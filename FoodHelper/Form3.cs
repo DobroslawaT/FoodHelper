@@ -40,8 +40,20 @@ namespace FoodHelper
             textBox1.Text = "Ingredients:\r\n";
 
             //textBox1.Text += chooseRecipe + numberOfPortions;
-            int n = 0;
-
+            int n = 1;
+            for(int i = 0; i < 13; i++)
+            {
+                //n = i;
+                if (numberOfPortions.Equals("i") )
+                {
+                    n=i;
+                    return;
+                }
+            }/*
+            else if (numberOfPortions.Equals("n+1") && n < 13)
+            {
+                n = n++;
+            }
             if (numberOfPortions.Equals("1"))//it works XD
             {
                 n = 1;
@@ -54,10 +66,14 @@ namespace FoodHelper
             {
                 n = 3;
             }
-            else if (numberOfPortions.Equals("2"))
+            else if (numberOfPortions.Equals("4"))
             {
                 n = 4;
             }
+            else if (numberOfPortions.Equals("n+1")&&n<13)
+            {
+                n =n++;
+            }*/
             // List<IField> fieldList = new List<IField>();
             float ingr = 0;
             if (chooseRecipe.Equals("IceTea"))
@@ -76,6 +92,40 @@ namespace FoodHelper
                 textBox1.Text += "5. Stir until honey and sugar dissolve\r\n";
                 textBox1.Text += "6. Put the tea into an airtight container and put in the fridge until it's cool\r\n";
 
+
+            }
+            else if (chooseRecipe.Equals("Sushi"))
+            {
+                textBox1.Text += "Rice" + "\t\t\t" + n * (ingr = 83F) + "\t" + "g" + "\r\n";
+                textBox1.Text += "Nori" + "\t\t\t" + n * (ingr = 1F) + "\t" + "pcs" + "\r\n";
+                textBox1.Text += "Avocado" + "\t\t\t" + n * (ingr = 1F) + "\t" + "pcs" + "\r\n";
+                textBox1.Text += "Cottage" + "\t\t\t" + n * (ingr = 9F) + "\t" + "g" + "\r\n";
+                textBox1.Text += "Salmon" + "\t\t\t" + n * (ingr = 25F) + "\t" + "g" + "\r\n";
+                textBox1.Text += "Water" + "\t\t\t" + n * (ingr = 166F) + "\t" + "ml" + "\r\n";
+                textBox1.Text += "Japanese omlet" + "\t\t" + n * (0.5F) + "\t" + "portion" + "\r\n";
+                textBox1.Text += "Rice sauce" + "\t\t" + n * (ingr = 1) + "\t" + "portion" + "\r\n";
+                textBox1.Text += "\r\n\r\n";
+                textBox1.Text += "Steps:\r\n";
+                textBox1.Text += "1. Wash rice untill water will be clean\r\n";
+                textBox1.Text += "2. Cover up rice with the water and cook around 10 minutes\r\n";
+                textBox1.Text += "3. Leave for 10-15 minutes\r\n";
+                textBox1.Text += "4. Add rice sauce and mix\r\n";
+                textBox1.Text += "5. Wait until rice is cool\r\n";
+                textBox1.Text += "6. Prepare long slices of japanese omlet, avocado and salmon\r\n";
+                textBox1.Text += "6. Take nori and spread rice on it. Leave 2 cm on a top without rice\r\n";
+                textBox1.Text += "7. put slices at the bottom and add some cottage on it\r\n";
+                textBox1.Text += "8. Roll it and cut into peaces\r\n";
+            }
+            else if (chooseRecipe.Equals("Japanese omlet"))
+            {
+
+            }
+            else if (chooseRecipe.Equals("Rice with strawberries"))
+            {
+
+            }
+            else if (chooseRecipe.Equals("Rice sauce"))
+            {
 
             }
             // {

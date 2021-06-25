@@ -28,7 +28,7 @@ namespace FoodHelper
             comboBox1.Items.Add("Sushi");
             comboBox1.Items.Add("Japanese omlet");
             comboBox1.Items.Add("Rice with strawberries");
-            comboBox1.Items.Add("Lava cake");
+            comboBox1.Items.Add("Rice sauce");
         }
 
         private void button1_Click(object sender, EventArgs e)

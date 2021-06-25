@@ -65,6 +65,30 @@ namespace FoodHelper
             {
                 n = 6;
             }
+            else if (numberOfPortions.Equals("7"))
+            {
+                n = 7;
+            }
+            else if (numberOfPortions.Equals("8"))
+            {
+                n = 8;
+            }
+            else if (numberOfPortions.Equals("9"))
+            {
+                n = 9;
+            }
+            else if (numberOfPortions.Equals("10"))
+            {
+                n = 10;
+            }
+            else if (numberOfPortions.Equals("11"))
+            {
+                n = 11;
+            }
+            else if (numberOfPortions.Equals("12"))
+            {
+                n = 12;
+            }
             // List<IField> fieldList = new List<IField>();
             float ingr = 0;
             if (chooseRecipe.Equals("IceTea"))

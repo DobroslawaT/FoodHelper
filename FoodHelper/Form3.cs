@@ -40,20 +40,7 @@ namespace FoodHelper
             textBox1.Text = "Ingredients:\r\n";
 
             //textBox1.Text += chooseRecipe + numberOfPortions;
-            int n = 1;
-            for(int i = 0; i < 13; i++)
-            {
-                //n = i;
-                if (numberOfPortions.Equals("i") )
-                {
-                    n=i;
-                    return;
-                }
-            }/*
-            else if (numberOfPortions.Equals("n+1") && n < 13)
-            {
-                n = n++;
-            }
+            int n = 0;
             if (numberOfPortions.Equals("1"))//it works XD
             {
                 n = 1;
@@ -70,10 +57,38 @@ namespace FoodHelper
             {
                 n = 4;
             }
-            else if (numberOfPortions.Equals("n+1")&&n<13)
+            else if (numberOfPortions.Equals("5"))
             {
-                n =n++;
-            }*/
+                n=5;
+            }
+            else if (numberOfPortions.Equals("6"))
+            {
+                n = 6;
+            }
+            else if (numberOfPortions.Equals("7"))
+            {
+                n = 7;
+            }
+            else if (numberOfPortions.Equals("8"))
+            {
+                n = 8;
+            }
+            else if (numberOfPortions.Equals("9"))
+            {
+                n = 9;
+            }
+            else if (numberOfPortions.Equals("10"))
+            {
+                n = 10;
+            }
+            else if (numberOfPortions.Equals("11"))
+            {
+                n = 11;
+            }
+            else if (numberOfPortions.Equals("12"))
+            {
+                n = 12;
+            }
             // List<IField> fieldList = new List<IField>();
             float ingr = 0;
             if (chooseRecipe.Equals("IceTea"))

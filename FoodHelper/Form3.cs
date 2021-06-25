@@ -118,29 +118,86 @@ namespace FoodHelper
             }
             else if (chooseRecipe.Equals("Japanese omlet"))
             {
-
+                textBox1.Text += "Eggs" + "\t\t\t" + n * (ingr = 2F) + "\t" + "" + "\r\n";
+                textBox1.Text += "Mirin" + "\t\t\t" + n * (ingr = 1F) + "\t" + "table spoon" + "\r\n";
+                textBox1.Text += "Sugar" + "\t\t\t" + n * (ingr = 2F) + "\t" + "table spoon" + "\r\n";
+                textBox1.Text += "Salt" + "\t\t\t" + n * (ingr = 1F) + "\t" + "tea spoon" + "\r\n";
+                textBox1.Text += "Oil" + "\t\t" + n * (ingr = 1F) + "\t" + "table spoon" + "\r\n";
+                textBox1.Text += "\r\n\r\n";
+                textBox1.Text += "Steps:\r\n";
+                textBox1.Text += "1. Mix together the eggs, mirin, sugar and salt in a bowl\r\n";
+                textBox1.Text += "2. Put the oil and afterwards the mixture into a pan on medium heat\r\n";
+                textBox1.Text += "3. When the egg is set, gently roll it\r\n";
+                textBox1.Text += "4. Remove from the pan and enjoy\r\n";
             }
             else if (chooseRecipe.Equals("Rice with strawberries"))
             {
-
+                textBox1.Text += "Water" + "\t\t\t" + n * (ingr = 0.48F) + "\t" + "l" + "\r\n";
+                textBox1.Text += "Rice" + "\t\t\t" + n * (ingr = 220F) + "\t" + "g" + "\r\n";
+                textBox1.Text += "Strawberries" + "\t\t\t" + n * (ingr = 250F) + "\t" + "g" + "\r\n";
+                textBox1.Text += "\r\n\r\n";
+                textBox1.Text += "Steps:\r\n";
+                textBox1.Text += "1. Wash the rice\r\n";
+                textBox1.Text += "2. Put the water and the rice into a pot\r\n";
+                textBox1.Text += "3. Bring the water to a boil\r\n";
+                textBox1.Text += "4. Then turn the heat down to maintain a simmer\r\n";
+                textBox1.Text += "5. For long grain rice check th rice after 15 minutes and for brown rice after 30\r\n";
+                textBox1.Text += "6. Turn ofd the heat and let the rice sit\r\n";
+                textBox1.Text += "7. Meanwhile crush the strawberries\r\n";
+                textBox1.Text += "8. When the rice is ready, serve it with strawberries\r\n";
             }
             else if (chooseRecipe.Equals("Rice sauce"))
             {
+                textBox1.Text += "Rice Vinegar" + "\t\t\t" + n * (ingr = 1.5F) + "\t" + "table sppon" + "\r\n";
+                textBox1.Text += "Sugar" + "\t\t\t" + n * (ingr = 1F) + "\t" + "table sppon" + "\r\n";
+                textBox1.Text += "Salt" + "\t\t" + n * (ingr = 1F) + "\t" + "table sppon" + "\r\n";
+                textBox1.Text += "\r\n\r\n";
+                textBox1.Text += "Steps:\r\n";
+                textBox1.Text += "1. Add the rice vinegar, sugar and salt into a bowl\r\n";
+                textBox1.Text += "2. Stir until the sugar dissolves\r\n";
+            }
+            else if (chooseRecipe.Equals("Pina Colada"))
+            {
+                textBox1.Text += "Ice" + "\t\t\t" + n * (ingr = 470F) + "\t" + "g" + "\r\n";
+                textBox1.Text += "Cream of Coconut" + "\t\t\t" + n * (ingr = 45F) + "\t" + "ml" + "\r\n";
+                textBox1.Text += "Pineapple juice" + "\t\t\t" + n * (ingr = 45F) + "\t" + "ml" + "\r\n";
+                textBox1.Text += "White Rum" + "\t\t\t" + n * (ingr = 45F) + "\t" + "ml" + "\r\n";
+                textBox1.Text += "Cherry" + "\t\t" + n * (ingr = 1F) + "\t" + "" + "\r\n";
+                textBox1.Text += "\r\n\r\n";
+                textBox1.Text += "Steps:\r\n";
+                textBox1.Text += "1. Crush the ice\r\n";
+                textBox1.Text += "2. Add the ice, the cream of coconut, pineapple juice and white rum into a blender\r\n";
+                textBox1.Text += "3. Blend the ingredients together until smooth\r\n";
+                textBox1.Text += "4. Poor into a tall glass and garnish with a straw and a cherry\r\n";
 
             }
+            else if (chooseRecipe.Equals("Lemon Sorbet"))
+            {
+                textBox1.Text += "Water" + "\t\t\t" + n * (ingr = 0.15F) + "\t" + "l" + "\r\n";
+                textBox1.Text += "Sugar" + "\t\t\t" + n * (ingr = 30F) + "\t" + "g" + "\r\n";
+                textBox1.Text += "lemon juice" + "\t\t" + n * (ingr = 30F) + "\t" + "ml" + "\r\n";
+                textBox1.Text += "\r\n\r\n";
+                textBox1.Text += "Steps:\r\n";
+                textBox1.Text += "1. Juice the lemon\r\n";
+                textBox1.Text += "2. Stir over low heat until the sugar dissolves\r\n";
+                textBox1.Text += "3. Add the lemon juice\r\n";
+                textBox1.Text += "4. Let it cool and put the mixture in a frost resistant container\r\n";
+                textBox1.Text += "5. Put the container in the freezer for 3 to 5 hours\r\n";
+                textBox1.Text += "6. Stir the Sorbet every hour\r\n";
+            }
             // {
-            /* foreach (var IField in fieldList)
-             {
-                 if (IField.Name == "IceTea")
+                /* foreach (var IField in fieldList)
                  {
-                     textBox1.Text += Field.NameOfingredient + "\t" + Field.HowMuchiNeed + "\t" + Field.TypeOfIngredient1 + "\n";
+                     if (IField.Name == "IceTea")
+                     {
+                         textBox1.Text += Field.NameOfingredient + "\t" + Field.HowMuchiNeed + "\t" + Field.TypeOfIngredient1 + "\n";
+                     }
                  }
-             }
-        // }
-        /* else if (chooseRecipe.Equals("Sushi"))
-         {
+            // }
+            /* else if (chooseRecipe.Equals("Sushi"))
+             {
 
-         }*/
+             }*/
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

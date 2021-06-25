@@ -28,7 +28,7 @@ namespace FoodHelper
         };
     }
 
-        static class Program
+    static class Program
     {
         /// <summary>
         ///  The main entry point for the application.
@@ -40,11 +40,11 @@ namespace FoodHelper
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            var IceTea=new Recipe();
+            var IceTea = new Recipe();
             IceTea.NameOfRecipe = "IceTea";
-            IceTea.ingredients = new string[] { "Water", "Tea", "Honey","Sugar","Lemon"};
-            IceTea.HowMuchIngredients = new float[] { 1.5F, 6,2,1,1};
-            IceTea.TypeOfMeasurment = new string[] { "liter", "bag","table spoon","table spoon","fruit"};
+            IceTea.ingredients = new string[] { "Water", "Tea", "Honey", "Sugar", "Lemon" };
+            IceTea.HowMuchIngredients = new float[] { 1.5F, 6, 2, 1, 1 };
+            IceTea.TypeOfMeasurment = new string[] { "liter", "bag", "table spoon", "table spoon", "fruit" };
         }
     }
 }

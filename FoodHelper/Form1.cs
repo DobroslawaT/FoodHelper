@@ -8,10 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 //using FoodHelper;
-public partial class Form1 : Form
+/*public partial class Form1 : Form
 {
     public string ChoiceRecipe;
-}
+}*/
 namespace FoodHelper
 {
     public partial class Form1 : Form
@@ -79,9 +79,11 @@ namespace FoodHelper
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
+            /*Form2 f2 = new Form2();
             this.Hide();
-            f2.ShowDialog();
+            f2.ShowDialog();*/
+            Form3 frm = new Form3(comboBox1.Text);
+            frm.Show();
         }
     }
 }

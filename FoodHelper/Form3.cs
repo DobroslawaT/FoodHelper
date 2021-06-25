@@ -95,7 +95,7 @@ namespace FoodHelper
 
             }
             else if (chooseRecipe.Equals("Sushi"))
-            {
+            { 
                 textBox1.Text += "Rice" + "\t\t\t" + n * (ingr = 83F) + "\t" + "g" + "\r\n";
                 textBox1.Text += "Nori" + "\t\t\t" + n * (ingr = 1F) + "\t" + "pcs" + "\r\n";
                 textBox1.Text += "Avocado" + "\t\t\t" + n * (ingr = 1F) + "\t" + "pcs" + "\r\n";

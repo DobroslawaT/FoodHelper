@@ -23,7 +23,7 @@ namespace FoodHelper
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        { 
             comboBox1.Items.Add("IceTea");
             comboBox1.Items.Add("Sushi");
             comboBox1.Items.Add("Japanese omlet");

@@ -40,7 +40,20 @@ namespace FoodHelper
             textBox1.Text = "Ingredients:\r\n";
 
             //textBox1.Text += chooseRecipe + numberOfPortions;
-            int n = 0;
+            int n = 1;
+            for(int i = 0; i < 13; i++)
+            {
+                //n = i;
+                if (numberOfPortions.Equals("i") )
+                {
+                    n=i;
+                    return;
+                }
+            }/*
+            else if (numberOfPortions.Equals("n+1") && n < 13)
+            {
+                n = n++;
+            }
             if (numberOfPortions.Equals("1"))//it works XD
             {
                 n = 1;
@@ -57,38 +70,10 @@ namespace FoodHelper
             {
                 n = 4;
             }
-            else if (numberOfPortions.Equals("5"))
+            else if (numberOfPortions.Equals("n+1")&&n<13)
             {
-                n=5;
-            }
-            else if (numberOfPortions.Equals("6"))
-            {
-                n = 6;
-            }
-            else if (numberOfPortions.Equals("7"))
-            {
-                n = 7;
-            }
-            else if (numberOfPortions.Equals("8"))
-            {
-                n = 8;
-            }
-            else if (numberOfPortions.Equals("9"))
-            {
-                n = 9;
-            }
-            else if (numberOfPortions.Equals("10"))
-            {
-                n = 10;
-            }
-            else if (numberOfPortions.Equals("11"))
-            {
-                n = 11;
-            }
-            else if (numberOfPortions.Equals("12"))
-            {
-                n = 12;
-            }
+                n =n++;
+            }*/
             // List<IField> fieldList = new List<IField>();
             float ingr = 0;
             if (chooseRecipe.Equals("IceTea"))
@@ -199,6 +184,10 @@ namespace FoodHelper
                 textBox1.Text += "4. Let it cool and put the mixture in a frost resistant container\r\n";
                 textBox1.Text += "5. Put the container in the freezer for 3 to 5 hours\r\n";
                 textBox1.Text += "6. Stir the Sorbet every hour\r\n";
+            }
+            else if (chooseRecipe.Equals(""))
+            {
+                textBox1.Text += "No reipe chosen ;-;";
             }
             // {
                 /* foreach (var IField in fieldList)
